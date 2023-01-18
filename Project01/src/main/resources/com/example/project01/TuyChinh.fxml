@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project01.TuyChinhController">
+    <children>
+        <Button layoutX="24.0" layoutY="352.0" mnemonicParsing="false" onAction="#btnBack" text="Back" />
+      <TableView fx:id="tableView" layoutX="44.0" layoutY="36.0" prefHeight="267.0" prefWidth="330.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="171.20001220703125" text="Name" />
+            <TableColumn fx:id="hlv" prefWidth="81.5999755859375" text="HLV" />
+        </columns>
+      </TableView>
+      <Label layoutX="401.0" layoutY="80.0" prefHeight="18.0" prefWidth="22.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idTextField" layoutX="437.0" layoutY="77.0" />
+      <Label layoutX="401.0" layoutY="138.0" text="Name" />
+      <TextField fx:id="nameTextField" layoutX="437.0" layoutY="134.0" />
+      <Label layoutX="401.0" layoutY="191.0" text="HLV" />
+      <TextField fx:id="hlvTextField" layoutX="437.0" layoutY="187.0" />
+      <Button layoutX="407.0" layoutY="251.0" mnemonicParsing="false" onAction="#add" prefHeight="26.0" prefWidth="41.0" text="Add" />
+      <Button layoutX="504.0" layoutY="251.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="56.0" text="Delete" />
+      <Button layoutX="406.0" layoutY="303.0" mnemonicParsing="false" onAction="#sorts" text="Clear" />
+      <Button layoutX="506.0" layoutY="303.0" mnemonicParsing="false" onAction="#update" text="Update" />
+      <Button layoutX="402.0" layoutY="352.0" mnemonicParsing="false" onAction="#save" text="Save" />
+      <Button layoutX="506.0" layoutY="352.0" mnemonicParsing="false" onAction="#search" text="Search" />
+    </children>
+
+</AnchorPane>

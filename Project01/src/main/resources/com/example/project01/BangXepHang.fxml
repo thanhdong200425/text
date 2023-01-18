@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="528.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project01.BangXepHangController">
+
+    <children>
+        <Button layoutX="14.0" layoutY="441.0" mnemonicParsing="false" onAction="#btnBack" text="Back" />
+      <Pane layoutY="-1.0" prefHeight="414.0" prefWidth="850.0">
+         <children>
+            <TableView fx:id="tableView" layoutX="4.0" layoutY="68.0" prefHeight="316.0" prefWidth="835.0">
+              <columns>
+                <TableColumn fx:id="thuTu" prefWidth="75.0" text="Thứ tự" />
+                <TableColumn fx:id="ten" prefWidth="264.00001525878906" text="Tên " />
+                  <TableColumn fx:id="soTran" prefWidth="65.60003662109375" text="Số trận" />
+                  <TableColumn fx:id="thang" prefWidth="75.20001220703125" text="Thắng" />
+                  <TableColumn fx:id="hoa" prefWidth="95.20001220703125" text="Hòa" />
+                  <TableColumn fx:id="thua" prefWidth="41.5999755859375" text="Thua" />
+                  <TableColumn fx:id="diem" prefWidth="111.20001220703125" text="Điểm" />
+                  <TableColumn fx:id="hlv" prefWidth="119.199951171875" text="HLV" />
+              </columns>
+            </TableView>
+            <Label layoutX="133.0" layoutY="14.0" prefHeight="35.0" prefWidth="584.0" style="-fx-alignment: Center; -fx-background-color: Yellow;" text="Bảng xếp hạng giải bóng đá vô địch quốc gia VLeague">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="609.0" layoutY="401.0" mnemonicParsing="false" onAction="#getter" prefHeight="26.0" prefWidth="41.0" text="Get" />
+    </children>
+
+</AnchorPane>
